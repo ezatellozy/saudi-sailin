@@ -1,0 +1,116 @@
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;700&display=swap");
+@import "tailwind";
+@import "components";
+
+// @import "scss/core.scss";
+
+html,
+body {
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+// body {
+//   // padding-top: 100px;
+// }
+
+.main-title {
+  @apply text-3xl font-bold capitalize flex mb-8 text-primary;
+}
+
+.is-rtl {
+  direction: rtl;
+}
+
+a {
+  // cursor: url(/cursor-img-cc.png), auto;
+  // cursor: url(/cursor-img-cc.png) 25 25, auto;
+}
+
+button,
+input,
+textarea {
+  &:focus {
+    @apply outline-none;
+  }
+}
+
+.locale-side {
+  @apply text-gray-600;
+
+  img {
+    @apply transition-all duration-300;
+  }
+
+  &:not(:hover) {
+    img {
+      @apply opacity-80;
+    }
+  }
+
+  &:hover {
+    @apply text-gray-900;
+  }
+}
+
+.slick-slide {
+  @apply h-full;
+}
+
+// .lang-selector,
+.nav-social {
+  margin-left: auto;
+}
+
+// .is-rtl .lang-selector,
+.is-rtl .nav-social {
+  margin-left: unset;
+  margin-right: auto;
+}
+
+.h-307 {
+  height: 307px !important;
+}
+
+.latest-news-tag {
+  @apply bg-third px-4;
+}
+
+.news-triangle {
+  @apply w-0 h-0 border-third;
+  border-width: 22.5px;
+  border-right-width: 0;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.is-rtl {
+  .news-triangle {
+    border-right-width: 22.5px;
+    border-left-width: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .h-307 {
+    height: 170px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .h-307 {
+    height: 200px !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .h-307 {
+    height: 348px !important;
+  }
+}
+
+@media (min-width: 1536px) {
+  .h-307 {
+    height: 387px !important;
+  }
+}

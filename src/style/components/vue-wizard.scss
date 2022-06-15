@@ -1,0 +1,271 @@
+$main-color: "#1E3002";
+$secondary-color: "#FFA408";
+
+.vue-form-wizard {
+  padding-bottom: 0;
+  .wizard-header {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .title {
+    color: rgb(139, 138, 138);
+  }
+  .wizard-navigation {
+    .wizard-progress-with-circle {
+      display: none !important;
+    }
+    .wizard-nav {
+      padding: 1.42rem 0 2.14rem 0;
+      border-bottom: 1px solid rgba($color: black, $alpha: 0.08);
+      padding-bottom: 0;
+      li {
+        flex-grow: 0;
+        flex: inherit;
+        margin-right: 3rem;
+        padding-bottom: 2rem;
+        &.active {
+          a {
+            color: $main-color !important;
+            .wizard-icon-circle {
+              .wizard-icon-container {
+                .wizard-icon {
+                  color: white;
+                  font-size: 1rem;
+                }
+              }
+            }
+            .checked {
+              box-shadow: 0 3px 6px 0 rgba(105, 108, 255, 0.4);
+            }
+          }
+        }
+        .wizard-icon-circle {
+          width: 2.71rem;
+          height: 2.71rem;
+          margin-right: 1rem;
+          border: none;
+          background-color: rgb(216, 216, 216);
+          border-radius: 6px;
+
+          .wizard-icon-container {
+            border-radius: 6px;
+          }
+          .wizard-icon {
+            font-style: inherit;
+            font-size: 1rem;
+            color: rgb(104, 104, 104);
+            &.feather {
+              font-size: 1.3rem;
+            }
+          }
+          &.checked {
+            background-color: rgba(#1e3002, $alpha: 0.08);
+            .wizard-icon {
+              color: $main-color;
+            }
+          }
+        }
+        a {
+          flex-direction: row;
+          .stepTitle {
+            font-size: 1rem;
+            color: gray;
+            font-weight: 600;
+          }
+          .wizard-icon {
+            transition: none !important;
+          }
+        }
+        &:not(:first-child) {
+          a {
+            &::before {
+              content: "\e844";
+              font-family: feather !important;
+              speak: none;
+              font-style: normal;
+              font-weight: 400;
+              font-variant: normal;
+              text-transform: none;
+              line-height: 1;
+              font-size: 1.14rem;
+              left: -30px;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//---------- Transparent Steps ----------//
+.steps-transparent {
+  &.vue-form-wizard {
+    background-color: transparent;
+    box-shadow: none;
+    padding-bottom: 0;
+    .wizard-header {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .wizard-navigation .wizard-nav {
+      border: none;
+    }
+  }
+  .wizard-tab-content {
+    box-shadow: 0px 4px 25px 0px rgba(black, 0.1);
+    background-color: white;
+  }
+  .wizard-card-footer {
+    background-color: white;
+    box-shadow: 0px 4px 25px 0px rgba(black, 0.1);
+  }
+  .wizard-tab-content {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  .wizard-card-footer {
+    box-shadow: -1px 16px 25px 0px rgba(black, 0.1);
+    // padding-bottom: 2.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}
+
+.vertical.wizard-vertical {
+  &.vue-form-wizard {
+    .wizard-navigation {
+      .wizard-nav {
+        border-right: 1px solid rgba($color: black, $alpha: 0.08);
+        border-bottom: none;
+        padding-right: 2.5rem;
+        min-width: 258px;
+        li {
+          margin-right: 0;
+          a {
+            flex-wrap: nowrap;
+            &::before {
+              content: none;
+            }
+          }
+          .stepTitle {
+            max-width: 200px;
+            font-size: 1rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+    .wizard-tab-content {
+      width: 100%;
+    }
+    .wizard-card-footer {
+      margin-left: 258px;
+      border-left: 1px solid rgba($color: black, $alpha: 0.08);
+      padding-top: 0;
+    }
+  }
+}
+
+//---------- Vertical Transparent Steps ----------//
+.vertical-steps {
+  &.vue-form-wizard {
+    .wizard-tab-content {
+      width: 100%;
+    }
+    .wizard-card-footer {
+      margin-left: 223px;
+      position: relative;
+      z-index: 9;
+      padding-top: 0;
+    }
+    .wizard-navigation {
+      .wizard-nav {
+        padding-right: 2.5rem;
+        padding-top: 30px;
+        li {
+          margin-right: 0;
+          a {
+            flex-wrap: nowrap;
+            &::before {
+              content: none;
+            }
+          }
+          .stepTitle {
+            max-width: 200px;
+            font-size: 1rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .vue-form-wizard {
+    .wizard-navigation {
+      flex-direction: column !important;
+      .wizard-nav.wizard-nav-pills {
+        li:not(:first-child) {
+          a {
+            &::before {
+              content: none;
+            }
+          }
+        }
+        li:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .wizard-card-footer {
+      margin: 0 !important;
+    }
+    &.wizard-vertical.vertical {
+      .wizard-nav.wizard-nav-pills {
+        border-right: none;
+        width: 100%;
+        border-bottom: 1px solid rgba(black, $alpha: 0.08);
+        margin-bottom: 0;
+        li {
+          padding-bottom: 10px;
+        }
+      }
+      .wizard-tab-content {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .vue-form-wizard {
+    .wizard-nav.wizard-nav-pills {
+      li:not(:first-child) {
+        a {
+          &::before {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.is-rtl {
+  .vertical.wizard-vertical.vue-form-wizard .wizard-navigation .wizard-nav {
+    padding-right: 0;
+    padding-left: 2.5rem;
+    border-right: transparent;
+    border-left: 1px solid rgba($color: black, $alpha: 0.08);
+  }
+  .vertical.wizard-vertical.vue-form-wizard .wizard-card-footer {
+    margin: 0 258px 0 0;
+    border-left: transparent;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+  }
+}

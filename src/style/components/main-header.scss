@@ -1,0 +1,67 @@
+.main-header {
+  .social-icon {
+    li {
+      padding: 0 5px;
+    }
+    a {
+      transition: 0.3s linear;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      background-color: #fff;
+      border-radius: 50%;
+      &:hover {
+        & > svg {
+          @apply text-white;
+        }
+        &.face {
+          background-color: #3b5998;
+          border-color: #3b5998;
+        }
+        &.twitter {
+          background: #1a90d9;
+          border-color: #1a90d9;
+        }
+        &.insta {
+          background: #ff5252;
+          border-color: #ff5252;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .main-header {
+    .social-icon {
+      a {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+@media (max-width: 549px) {
+  .main-header {
+    .social-icon {
+      a {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .auth {
+      span,
+      a {
+        font-size: 12px !important;
+      }
+      span {
+        .user {
+          @apply px-0 mx-0;
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+}

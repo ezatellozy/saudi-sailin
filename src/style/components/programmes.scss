@@ -1,0 +1,53 @@
+.programmes {
+   .main-title {
+    @apply text-3xl font-bold capitalize flex mb-8 text-white;
+  }
+  .programmes-container {
+    @apply flex flex-wrap;
+    .programm-container {
+      // @apply ;
+      
+      .programm-img {
+        @apply  relative;
+        .overlay {
+        // background-color: #FBC319;
+        background-color: rgba($color: #FBC319, $alpha:0.5);
+        
+        @apply w-full h-full absolute top-0 left-0;
+        transition: all 300ms ease-in-out;
+        &:hover {
+          // @apply bg-opacity-0;
+          background-color: rgba($color: #FBC319, $alpha:0);
+          transition: all 300ms ease-in-out;
+        }
+      }
+      }
+      .programm-title {
+        color: #FBFAF2;
+      }
+      .programm-details {
+        @apply flex flex-wrap justify-between;
+        
+        .programm-name {
+          @apply text-base;
+          color: #FBFAF2;
+        }
+        .programm-ebosides {
+          color: #F8BE5E;
+        }
+      }
+      
+    }
+  }
+  .all-programm {
+    @apply flex justify-end pt-8 px-12 text-2xl font-bold;
+    .all-programm-link {
+      color: #F8BE5E;
+    }
+  }
+}
+
+.bg-pattern {
+	background-image: url('/assets/images/pattern-1.png');
+	background-repeat: repeat;
+}

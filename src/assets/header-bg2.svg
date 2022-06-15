@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1035.205" height="331.233" viewBox="0 0 1035.205 331.233">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="576" y="814" width="1035.205" height="331.233" fill="none"/>
+    </clipPath>
+    <filter id="Rectangle_2" x="-361.795" y="-166.125" width="1980" height="199" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Scroll_Group_11" data-name="Scroll Group 11" transform="translate(-576 -814)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <g id="Group_60" data-name="Group 60" transform="translate(244.205 622.875)">
+      <path id="Path_127" data-name="Path 127" d="M560.568,423.965c211.412,0,324.938-141.163,324.938-332.151S854.114,67.059,642.7,67.059c-116.487,0-441.584-7.458-545.8,69.9C12.334,199.728,0,310.717,0,388.353,0,435.9,23.353,504.529,83.083,546.336,241.31,657.082,407.295,423.965,560.568,423.965Z" transform="translate(1111.027 683.026) rotate(-146)" fill="#416f0a" opacity="0.223"/>
+      <path id="Path_128" data-name="Path 128" d="M1392.04,23.473C1421.154-187.153,1147.6,195.9,888.41,228.127c-142.814,17.758-430.7-48.216-652.31,82.432S-60.4,617.036,1.981,750.717,348,912.118,709.573,722.634,1362.925,234.1,1392.04,23.473Z" transform="translate(933.675 867.939) rotate(-146)" fill="#416f0a" opacity="0.223"/>
+      <g transform="matrix(1, 0, 0, 1, 331.79, 191.13)" filter="url(#Rectangle_2)">
+        <rect id="Rectangle_2-2" data-name="Rectangle 2" width="1920" height="139" transform="translate(-331.79 -139.13)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

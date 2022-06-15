@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1483.448" height="424.887" viewBox="0 0 1483.448 424.887">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="179" y="350" width="1483.448" height="424.887" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Scroll_Group_14" data-name="Scroll Group 14" transform="translate(-179 -350)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <g id="Group_44" data-name="Group 44" transform="translate(-257.114 -5006.001)">
+      <g id="Group_39" data-name="Group 39" transform="translate(126 300)">
+        <path id="Path_113" data-name="Path 113" d="M1166.1-98.171c396.156,0,314.039,811.591,314.039,1169.476s-58.825,46.388-454.981,46.388c-218.281,0-827.466,13.976-1022.757-130.982C-156.06,869.09-179.172,661.113-179.172,515.633c0-89.1,43.76-217.7,155.686-296.037C273.008,12.073,878.888-98.171,1166.1-98.171Z" transform="translate(817.782 4918.093) rotate(19)" fill="#416f0a" opacity="0.223"/>
+        <path id="Path_114" data-name="Path 114" d="M1166.1-98.171c396.156,0,314.039,811.591,314.039,1169.476s-58.825,46.388-454.981,46.388c-218.281,0-680.176,175.946-996.724-2.287S-366.79,649.287-241.034,404.761,170.042,295.6,493.97,44.239,878.888-98.171,1166.1-98.171Z" transform="translate(817.782 4918.093) rotate(19)" fill="#416f0a" opacity="0.223"/>
+      </g>
+    </g>
+  </g>
+</svg>

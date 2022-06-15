@@ -1,0 +1,134 @@
+.our-history {
+  .image {
+    flex-basis: 50%;
+  }
+  .info {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .our-history {
+    .image {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: 100%;
+        padding: 20px 0;
+      }
+    }
+    .info {
+      order: 1;
+      text-align: center;
+      flex-basis: 100%;
+    }
+  }
+}
+.about-federation {
+  background-image: url("../assets/about-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 50px 0;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+
+  .text {
+    width: 600px;
+    text-align: center;
+    padding: 100px 15px 0;
+    h3 {
+      color: #1e3002;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+    p {
+      padding-top: 30px;
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.4;
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .about-federation {
+    .text {
+      h3 {
+        font-size: 18px !important;
+      }
+      p {
+        font-size: 14px !important;
+        width: 100%;
+      }
+    }
+  }
+}
+.message {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    .our-message {
+      width: 100%;
+      color: #1e3002;
+      position: relative;
+      padding-bottom: 40px;
+      &:first-child::before {
+        content: none;
+      }
+      img {
+        width: 50px;
+      }
+      .text {
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 10px 15px;
+        h4 {
+          font-weight: bold;
+          font-size: 20px;
+          margin: 0;
+        }
+        p {
+          line-height: 1.6;
+          padding-top: 10px;
+          margin: 0;
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      .our-message {
+        &:first-child::before {
+          // content: "";
+          position: absolute;
+          top: 50%;
+          right: 0;
+          @apply bg-secondary;
+          width: 2px;
+          height: 70%;
+          transform: translateY(-50%);
+        }
+        width: 100%;
+      }
+    }
+  }
+}
+.members-container {
+  background-image: url("../assets/newsBack.svg");
+  background-size: cover;
+  //   background-repeat: no-repeat;
+  background-position: top left;
+}
+.is-rtl {
+  .about {
+    direction: ltr;
+  }
+}

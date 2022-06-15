@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="809.629" height="273.328" viewBox="0 0 809.629 273.328">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="404" y="713" width="809.629" height="273.328" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Scroll_Group_11" data-name="Scroll Group 11" transform="translate(-404 -713)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <g id="Group_60" data-name="Group 60" transform="translate(-99.219 521.126)">
+      <path id="Path_127" data-name="Path 127" d="M560.568,423.965c211.412,0,324.938-141.163,324.938-332.151S854.114,67.059,642.7,67.059c-116.487,0-441.584-7.458-545.8,69.9C12.334,199.728,0,310.717,0,388.353,0,435.9,23.353,504.529,83.083,546.336,241.31,657.082,407.294,423.965,560.568,423.965Z" transform="translate(1038.068 624.5) rotate(-146)" fill="#416f0a" opacity="0.223"/>
+      <path id="Path_128" data-name="Path 128" d="M1100.672,60.528c0-190.989-183.083,131.042-394.5,131.042-116.487,0-362.981-93.895-531.91,1.221S-36.649,441.538,30.461,572.032,336.145,760.639,614.485,627.3,1100.672,251.516,1100.672,60.528Z" transform="translate(1011.717 677.202) rotate(-146)" fill="#416f0a" opacity="0.223"/>
+    </g>
+  </g>
+</svg>

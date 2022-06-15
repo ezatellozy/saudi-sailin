@@ -1,0 +1,74 @@
+$main-color: #2d4f05;
+$second-color: #ffa408;
+.form-container {
+  width: 400px;
+  .form-inputs {
+    margin-bottom: 30px;
+    .group {
+      position: relative;
+
+      &:last-child {
+        margin-top: 30px;
+      }
+    }
+
+    .inputMaterial {
+      padding: 10px;
+      display: block;
+      border: none;
+      border-bottom: 2px solid;
+      background: transparent;
+      width: 100%;
+      text-align: center;
+
+      &::placeholder {
+        color: $main-color;
+        text-align: center;
+        font-weight: 600;
+
+        transition: 0 ease all 0.2s;
+      }
+
+      &:focus {
+        outline: none;
+        &::placeholder {
+          color: transparent;
+          transition: 0 ease all 0.2s;
+        }
+      }
+    }
+
+    label {
+      font-weight: bold;
+      color: $main-color;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      visibility: hidden;
+      transition: 0.2s ease all;
+      margin: 0;
+
+      &:focus {
+        top: -10px;
+        outline: none;
+      }
+    }
+
+    .inputMaterial:focus ~ label,
+    .inputMaterial:not(:placeholder-shown) ~ label {
+      top: -10px;
+      visibility: visible;
+    }
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
